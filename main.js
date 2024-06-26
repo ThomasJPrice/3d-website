@@ -59,11 +59,11 @@ function addStar() {
 Array(200).fill().forEach(addStar)
 
 // background
-const spaceTexture = new THREE.TextureLoader().load('space.jpg')
+const spaceTexture = new THREE.TextureLoader().load('/assets/space.jpg')
 scene.background = spaceTexture
 
 // avatar
-const avatarTexture = new THREE.TextureLoader().load('avatar.jpg')
+const avatarTexture = new THREE.TextureLoader().load('/assets/avatar.jpg')
 
 const avatar = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
@@ -73,8 +73,8 @@ const avatar = new THREE.Mesh(
 scene.add(avatar)
 
 // moon
-const moonTexture = new THREE.TextureLoader().load('moon.jpg')
-const normalTexture = new THREE.TextureLoader().load('normal.jpg')
+const moonTexture = new THREE.TextureLoader().load('/assets/moon.jpg')
+const normalTexture = new THREE.TextureLoader().load('/assets/normal.jpg')
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -90,7 +90,7 @@ moon.position.z = 30
 moon.position.setX(-10)
 
 // mars
-const marsTexture = new THREE.TextureLoader().load('mars.jpg')
+const marsTexture = new THREE.TextureLoader().load('/assets/mars.jpg')
 
 const mars = new THREE.Mesh(
   new THREE.SphereGeometry(6, 32, 32),
